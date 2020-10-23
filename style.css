@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+
+    body {
+        margin: 0;
+    }
+
+    /* Meny Source: https://www.w3schools.com/css/css_navbar.asp  */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 30%;
+        overflow: hidden;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: darkslategray;
+        text-align: center;
+        padding: 3px 16px;
+        text-decoration: none;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 1.5em;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /* innledning */
+    section.innledning {
+        margin: 0;
+        background-color: white;
+        height: 50vh;
+        width: 100%;
+        padding: 0%;
+        max-width: none;
+        display: table;
+    }
+
+    /*bilder*/
+    img.lys {
+        height: 30vh;
+        width: 40vh;
+    }
+
+img.sidebilder {
+    height: 25%;
+    width: 20%;
+}
+
+    img.gps {
+        padding-top: 50px;
+        height: 80%;
+        width: 20%;
+        float: right;
+        margin-right: 20%;
+    }
+
+    img.logo {
+        height: 30px;
+        width: 30px;
+        float: left;
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    section.hovedinnhold {
+        margin: 0;
+        background-color: black;
+        height: 50vh;
+        width: 80%;
+        padding: 0;
+        max-width: none;
+        display: table;
+        float: right;
+    }
+
+    div.bilder {
+        float: left;
+        max-width: 20%;
+        height: 50vh;
+    }
+
+    div.sidebilder {
+        background-color: black;
+    }
+
+    div.innhold {
+        padding-left: 22%;
+        padding-top: 1.5em;
+    }
+
+    /* Font styling */
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 4em;
+        margin-bottom: 1px;
+
+    }
+
+    #slagord {
+        font-family: 'Ubuntu', sans-serif;
+        color: darkslategray;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    div.content p {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        padding-left: 30px;
+        font-size: 1em;
+        margin-right: 20%;
+    }
