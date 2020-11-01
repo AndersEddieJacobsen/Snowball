@@ -2,123 +2,207 @@
     box-sizing: border-box;
 }
 
-
-    body {
-        margin: 0;
-    }
-
-    /* Meny Source: https://www.w3schools.com/css/css_navbar.asp  */
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding-left: 30%;
-        overflow: hidden;
-        background-color: white;
-        position: fixed;
-        width: 100%;
-
-    }
-
-    li {
-        float: left;
-    }
-
-    li a {
-        display: block;
-        color: darkslategray;
-        text-align: center;
-        padding: 3px 16px;
-        text-decoration: none;
-        font-family: "Trebuchet MS", sans-serif;
-        font-size: 1.5em;
-    }
-
-    li a:hover {
-        text-decoration: underline;
-    }
-
-    /* innledning */
-    section.innledning {
-        margin: 0;
-        background-color: white;
-        height: 50vh;
-        width: 100%;
-        padding: 0%;
-        max-width: none;
-        display: table;
-    }
-
-    /*bilder*/
-    img.lys {
-        height: 30vh;
-        width: 40vh;
-    }
-
-img.sidebilder {
-    height: 25%;
-    width: 20%;
+html  {
+    font-family: 'Ubuntu', sans-serif;
 }
 
-    img.gps {
-        padding-top: 50px;
-        height: 80%;
-        width: 20%;
-        float: right;
-        margin-right: 20%;
-    }
-
-    img.logo {
-        height: 30px;
-        width: 30px;
-        float: left;
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-
-    section.hovedinnhold {
+body {
         margin: 0;
+    }
+
+/* Grid view. Source https://www.w3schools.com/css/css_rwd_grid.asp */
+[class*="col-"] {
+    float: left;
+    padding: 1px;
+    border: 0ox solid red;
+}
+
+/* grids */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*klarerer flyten*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Responsive mobil*/
+@media screen and (max-width: 660px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    div.col-2.innhold {
+        font-size: 40%;
+        width: 20%;
+    }
+    div.col-2 {
+        font-size: 30%;
+        width: 30%;
+    }
+    a.col-1 {
+        font-size: 150%;
+    }
+
+    div.meny {
+        height: 35vh;
+    }
+
+    #aboutUsMobil {
+        margin-top: 0px;
+    }
+
+
+
+}
+
+/* Meny */
+.meny a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.meny a:hover {
+        text-decoration: underline;
+}
+
+/*bilder*/
+
+
+/* seksjoner */
+section.meny {
+    font-size: 20px;
+    margin: 0;
+    background-color: lightseagreen;
+    height: 50px;
+    width: 100%;
+    padding: 0%;
+    max-width: none;
+    float: top;
+    display: table;
+}
+
+section.innledning {
+    margin: 0;
+    background-color: white;
+    height: 45vh;
+    width: 100%;
+    padding: 0%;
+    max-width: none;
+    display: table;
+}
+
+
+section.hovedinnhold {
         background-color: black;
         height: 50vh;
-        width: 80%;
+        width: 100%;
         padding: 0;
         max-width: none;
         display: table;
         float: right;
-    }
+    color: white;
 
-    div.bilder {
-        float: left;
-        max-width: 20%;
-        height: 50vh;
-    }
+}
 
-    div.sidebilder {
-        background-color: black;
-    }
+section.about {
+    background-color: white;
+    height: 95vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    display: table;
+    float: right;
+    color: black;
 
-    div.innhold {
-        padding-left: 22%;
-        padding-top: 1.5em;
-    }
+}
+/* innhold forsiden */
 
-    /* Font styling */
-    h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 4em;
-        margin-bottom: 1px;
+div.innhold {
+    padding-top: 5%;
+}
 
-    }
 
-    #slagord {
-        font-family: 'Ubuntu', sans-serif;
-        color: darkslategray;
-        font-size: 1.5em;
-        margin: 0;
-    }
-    div.content p {
-        font-family: 'Ubuntu', sans-serif;
-        color: white;
-        padding-left: 30px;
-        font-size: 1em;
-        margin-right: 20%;
-    }
+div.innhold h1 {
+    font-size: 3em;
+}
+
+.about {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#slagord {
+    font-size: 25px;
+}
+
+div.content {
+    margin-top: 9vh;
+}
+
+
+.gpslogo {
+    margin-top: 25%;
+    font-size: 8em;
+}
+
+.nLogo {
+    margin-top: 40%;
+    font-size: 8em;
+}
+
+/*innhold aboutsiden*/
+
+
+div.aboutUs {
+    height: 400px;
+    margin-top: 5vh;
+}
+
+.brukerIkon {
+    font-size: 100px;
+    float: left;
+    margin-right: 15px;
+}
+.brukerIkon2 {
+    margin-right: 15px;
+    font-size: 100px;
+    float: left;
+}
+
+
+/*innhold contactsiden*/
+
+div.contact {
+    height: 400px;
+    margin-top: 20vh;
+}
+
+.lightbulb {
+    width: 100%;
+    float: left;
+}
+
+.contact h1 {
+    margin: 0px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+
