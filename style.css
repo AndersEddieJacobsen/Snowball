@@ -14,7 +14,7 @@ body {
 [class*="col-"] {
     float: left;
     padding: 1px;
-    border: 0ox solid red;
+    border: 0px solid red;
 }
 
 /* grids */
@@ -38,11 +38,12 @@ body {
     display: table;
 }
 
-/*Responsive mobil*/
+/*Responsive mobil inspiration https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media screen and (max-width: 660px) {
     [class*="col-"] {
         width: 100%;
     }
+
 
     div.col-2.innhold {
         font-size: 40%;
@@ -56,15 +57,18 @@ body {
         font-size: 150%;
     }
 
-    div.meny {
-        height: 35vh;
+    .meny {
+        height: 70px;
     }
 
     #aboutUsMobil {
         margin-top: 0px;
     }
 
-
+    .meny a {
+        font-size: 40px;
+        border: 2px solid;
+    }
 
 }
 
@@ -80,6 +84,12 @@ body {
 }
 
 /*bilder*/
+.lysLogo {
+    float: left;
+    margin-top: 8px;
+    margin-left: 10%;
+    font-size: 30px;
+}
 
 
 /* seksjoner */
@@ -144,6 +154,7 @@ div.innhold h1 {
 .about {
     font-size: 20px;
     margin-right: 10px;
+    float: left;
 }
 
 #slagord {
@@ -161,12 +172,12 @@ div.content {
 }
 
 .nLogo {
-    margin-top: 40%;
+    margin-top: 25%;
     font-size: 8em;
+    float: right;
 }
 
 /*innhold aboutsiden*/
-
 
 div.aboutUs {
     height: 400px;
@@ -188,12 +199,12 @@ div.aboutUs {
 /*innhold contactsiden*/
 
 div.contact {
-    height: 400px;
-    margin-top: 20vh;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .lightbulb {
-    width: 100%;
+    width: 40%;
     float: left;
 }
 
@@ -205,4 +216,33 @@ div.contact {
     font-size: 18px;
 }
 
+/* Contact form code source: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
