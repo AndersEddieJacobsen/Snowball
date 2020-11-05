@@ -14,7 +14,7 @@ body {
 [class*="col-"] {
     float: left;
     padding: 1px;
-    border: 0px solid red;
+    border: 1px solid red;
 }
 
 /* grids */
@@ -77,6 +77,7 @@ body {
     margin-top: 15px;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .meny a:hover {
@@ -143,7 +144,7 @@ section.about {
 /* innhold forsiden */
 
 div.innhold {
-    padding-top: 5%;
+    padding-top: 10vh;
 }
 
 
@@ -154,25 +155,29 @@ div.innhold h1 {
 .about {
     font-size: 20px;
     margin-right: 10px;
-    float: left;
+    margin: 0;
+    padding-right: 40%;
+}
+
+.content {
+    margin: 0;
+    padding-top: 10vh;
 }
 
 #slagord {
     font-size: 25px;
 }
 
-div.content {
-    margin-top: 9vh;
-}
-
 
 .gpslogo {
-    margin-top: 25%;
+    margin-top: 5%;
+    margin-right: 5%;
     font-size: 8em;
+    float: left;
 }
 
 .nLogo {
-    margin-top: 25%;
+    padding-top: 4%;
     font-size: 8em;
     float: right;
 }
@@ -206,6 +211,7 @@ div.contact {
 .lightbulb {
     width: 40%;
     float: left;
+    padding-right: 15px;
 }
 
 .contact h1 {
